@@ -6,37 +6,30 @@ function setup() {
 }
 
 function draw() {
-    background(139, 69, 19);
-    fill(0);
-    stroke(255);
-    strokeWeight(120);
+    background(0, 255, 30);
+    noFill();
+    stroke(255, 0, 255);
+    strokeWeight(50);
 
     beginShape();
 
     var xoff = 0;
 
+ 
 
     for (var x = 0; x < innerWidth; x++){
-        stroke(255);
-        //var y = random(height);
-        var y = noise(xoff) * height;
-        // var splitY = noise(xoff) * height;
-        // for (var y = 0; x < innerHeight; y++){
-        //     if (y < splitY){
-            
-            
-        //     //tegn brun
         
-        // }
-        // else
-        //     //tegn blå
+        stroke(0, 255, 255);
+        var y = noise(xoff) * height;
+     
         
         vertex(x, y);
-        vertex(x, 0)
+        vertex(x, 0);
     
     
 
-        xoff += 1.5;
+        xoff += 0.01;
+
     }
     endShape();
 
