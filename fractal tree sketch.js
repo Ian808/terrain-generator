@@ -22,4 +22,4 @@ function branch (len) {
     branch(len * 0.67)
 }
 
-// kræver p5.js recusion libary //
+// kræver p5.js recursion libary //
